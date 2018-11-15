@@ -1,15 +1,15 @@
 // conf.js
-// var HTTPSProxyAgent = require('https-proxy-agent');
-// var sauceRestAgent = new HTTPSProxyAgent("http://<proxy>:<port>")
 
 exports.config = {
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
-    // sauceAgent: sauceRestAgent,
+    
+    // Proxy will be used for all Sauce Labs REST API calls
+    sauceProxy: 'http://<proxy>:<port>',
 
+    // Proxy will be used for Selenium traffic (e.g. POST elements)
     // webDriverProxy: 'http://<proxy>:<port>',
 
-    //seleniumAddress: 'http://ondemand.saucelabs.com:80/wd/hub',
     specs: ['specs/*spec.js'],
 
     // restartBrowserBetweenTests: true,
