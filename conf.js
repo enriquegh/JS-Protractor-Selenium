@@ -5,7 +5,7 @@ exports.config = {
     sauceKey: process.env.SAUCE_ACCESS_KEY,
     
     // Proxy will be used for all Sauce Labs REST API calls
-    sauceProxy: 'http://<proxy>:<port>',
+    // sauceProxy: 'http://<proxy>:<port>',
 
     // Proxy will be used for Selenium traffic (e.g. POST elements)
     // webDriverProxy: 'http://<proxy>:<port>',
